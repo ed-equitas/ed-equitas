@@ -78,10 +78,10 @@
 
     /* TIMELINE */
     .timeline { position: relative; list-style: none; }
-    .timeline::before { content: ''; position: absolute; left: 90px; top: 0; bottom: 0; width: 1px; background: var(--border); }
-    .timeline li { display: grid; grid-template-columns: 90px 1fr; gap: 2rem; margin-bottom: 2.5rem; position: relative; }
-    .timeline li::before { content: ''; position: absolute; left: 84px; top: 0.5rem; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); box-shadow: 0 0 0 1px var(--accent); }
-    .tl-year { font-size: 0.7rem; font-weight: 500; letter-spacing: 0.08em; color: var(--accent); text-align: right; padding-top: 0.3rem; line-height: 1.4; }
+    .timeline::before { content: ''; position: absolute; left: 116px; top: 0; bottom: 0; width: 1px; background: var(--border); }
+    .timeline li { display: grid; grid-template-columns: 100px 1fr; gap: 2.5rem; margin-bottom: 2.5rem; position: relative; }
+    .timeline li::before { content: ''; position: absolute; left: 112px; top: 0.5rem; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); border: 2px solid var(--bg); box-shadow: 0 0 0 1px var(--accent); z-index: 1; }
+    .tl-year { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.06em; color: var(--accent); text-align: right; padding-top: 0.3rem; line-height: 1.4; white-space: nowrap; }
     .tl-title { font-weight: 500; color: var(--ink); font-size: 0.95rem; margin-bottom: 0.15rem; }
     .tl-sub { font-size: 0.82rem; color: var(--muted); font-weight: 300; }
     .tl-desc { font-size: 0.82rem; color: var(--muted); font-weight: 300; margin-top: 0.4rem; line-height: 1.7; }
@@ -146,9 +146,9 @@
       nav { padding: 0 1rem; }
       .nav-links { gap: 1rem; }
       section { padding: 4rem 1.5rem; }
-      .timeline::before { left: 68px; }
-      .timeline li { grid-template-columns: 68px 1fr; }
-      .timeline li::before { left: 62px; }
+      .timeline::before { left: 84px; }
+      .timeline li { grid-template-columns: 80px 1fr; }
+      .timeline li::before { left: 88px; }
     }
   </style>
 </head>
